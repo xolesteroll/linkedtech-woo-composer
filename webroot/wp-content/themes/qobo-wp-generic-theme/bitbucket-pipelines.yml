@@ -1,0 +1,16 @@
+image: smartapps/bitbucket-pipelines-php-mysql
+
+pipelines:
+  default:
+    - step:
+        script:
+          - mkdir ~/.ssh
+          - echo $MY_SSH_KEY | base64 --decode -i > ~/.ssh/id_rsa
+          - echo > ~/.ssh/known_hosts
+          - ssh-keyscan -t rsa bitbucket.com >> ~/.ssh/known_hosts
+          - ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+          - chmod -R u+rwX,go-rwX ~/.ssh
+          - composer install --no-interaction --no-progress --no-suggest
+          - ./vendor/bin/phpcs --config-set ignore_warnings_on_exit 1
+          - ./vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs
+          - ./vendor/bin/phpcs --colors -p --extensions=php --standard=WordPress --ignore=vendor .

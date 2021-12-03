@@ -1,0 +1,68 @@
+# Project specific files #
+##########################
+!build/
+build/*
+!build/Robo/
+!build/Utility/
+vendor/
+tmp/
+.env
+etc/nginx.conf
+etc/ssl/*
+cghooks.lock
+# wp-config.php
+
+webroot/wp/
+# Ignore wp-content/, but exclude uploads by dev user
+webroot/wp-content/wflogs/
+webroot/wp-content/plugins/*
+!webroot/wp-content/uploads
+webroot/wp-content/uploads/*
+!webroot/wp-content/uploads/qobo
+
+# Exclude custom/manual plugins & themes
+!webroot/wp-content/themes
+!webroot/wp-content/themes/*
+!webroot/wp-content/plugins/advanced-custom-fields-pro
+!webroot/wp-content/plugins/advanced-custom-fields-pro/*
+!webroot/wp-content/plugins/elementor-pro
+!webroot/wp-content/plugins/elementor-pro/*
+!webroot/wp-content/plugins/revslider
+!webroot/wp-content/plugins/revslider/*
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+#Icon?
+ehthumbs.db
+Thumbs.db
+
+# Tool specific files #
+#######################
+# vim
+*~
+*.swp
+*.swo
+# sublime text & textmate
+*.sublime-*
+*.stTheme.cache
+*.tmlanguage.cache
+*.tmPreferences.cache
+# Eclipse
+.settings/*
+# JetBrains, aka PHPStorm, IntelliJ IDEA
+.idea/*
+# NetBeans
+nbproject/*
+# Visual Studio Code
+.vscode
+# Sass preprocessor
+.sass-cache/
+# ddev
+.ddev
+.ddev/*
+composer.lock

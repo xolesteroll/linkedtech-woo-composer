@@ -1,0 +1,186 @@
+/*
+ Theme Name: Qobo WP Generic Theme
+ Theme URI: https://github.com/QoboLtd/Qobo-WP-Generic-Theme
+ Author: Qobo Ltd
+ Author URI: https://qobo.biz
+ Description: A generic wordpress theme based on Twitter Bootstrap 3
+ Version: 1.1.2
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Tags: white, bootstrap, flexslider, jquery, multilevel menu, fontawesome,
+ Text Domain: qobo-wp-generic-theme
+
+ */
+
+/*
+ *
+ * General
+ *
+ */
+
+.container-fluid > .wrap, .wrap {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+}
+
+.single-news-image img {
+	width: 100%;
+	height: 100%;
+}
+
+.padding-zero-bottom {
+	padding-bottom: 0;
+}
+
+.padding-xs-bottom {
+	padding-bottom: 10px;
+}
+
+.padding-sm-bottom {
+	padding-bottom: 20px;
+}
+
+.padding-md-bottom {
+	padding-bottom: 30px;
+}
+
+.padding-lg-bottom {
+	padding-bottom: 40px;
+}
+
+.padding-zero-top {
+	padding-top: 0;
+}
+
+.padding-xs-top {
+	padding-top: 10px;
+}
+
+.padding-sm-top {
+	padding-top: 20px;
+}
+
+.padding-md-top {
+	padding-top: 30px;
+}
+
+.padding-lg-top {
+	padding-top: 40px;
+}
+
+.padding-zero-leftright > * {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.margin-zero-bottom {
+	margin-bottom: 0;
+}
+
+.margin-xs-bottom {
+	margin-bottom: 10px;
+}
+
+.margin-sm-bottom {
+	margin-bottom: 20px;
+}
+
+.margin-md-bottom {
+	margin-bottom: 30px;
+}
+
+.margin-lg-bottom {
+	margin-bottom: 40px;
+}
+
+.margin-zero-top {
+	margin-top: 0;
+}
+
+.margin-xs-top {
+	margin-top: 10px;
+}
+
+.margin-sm-top {
+	margin-top: 20px;
+}
+
+.margin-md-top {
+	margin-top: 30px;
+}
+
+.margin-lg-top {
+	margin-top: 40px;
+}
+
+.margin-zero-leftright {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+figure img {
+	width: 100%;
+	height: 100%;
+}
+
+.alignright {
+	text-align: right;
+}
+
+.content-area {
+	height: 100%
+}
+
+.display-table {
+	display: table;
+}
+
+.center-vertical {
+	float: none;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*Add this class to Bootstrap 3 rows and set columns to height:100% to create equal height columns.*/
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media (max-width: 767px) {
+	.display-xs-table {
+		display: table;
+	}
+	.center-xs-vertical {
+		float: none;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+@media (max-width: 990px) {
+	div[id*="footer-"] {
+		text-align: center !important;
+	}
+}
+
+/*
+ *
+ * Contact us
+ *
+ */
+.full-width input, .full-width textarea {
+	width: 100% !important;
+	padding: 10px 15px;
+	color: black !important;
+	background-color: white !important;
+	max-width: 100% !important;
+}
+.contact-form, .first-name, .last-name, .email, .message, .submit-button {
+	padding: 0;
+}

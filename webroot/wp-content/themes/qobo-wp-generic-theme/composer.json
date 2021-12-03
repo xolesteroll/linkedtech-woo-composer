@@ -1,0 +1,10 @@
+{
+	"name": "qobo/qobo-wp-generic-theme",
+	"description": "Generic WordPress theme built with Twitter Bootstrap 3",
+	"type": "wordpress-theme",
+	"keywords": ["wordpress"],
+	"license": "GPL-2.0",
+	"require-dev": {
+		"wp-coding-standards/wpcs": "dev-master"
+	}
+}
